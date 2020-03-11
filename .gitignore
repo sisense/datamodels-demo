@@ -1,0 +1,31 @@
+# General
+.DS_Store
+
+# Settings file (contains API token)
+shared.js
+
+# Dependency directories
+node_modules
+
+# Ignore IDE configuration files
+.idea/
+.vscode/
+vscode-debug-nodejs-es6/
+.editorconfig
+
+# Ignore npm internal configuration files
+.npmrc
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+### Windows template
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini

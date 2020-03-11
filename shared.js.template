@@ -1,0 +1,20 @@
+/**
+ * Written by Moti Granovsky, Sisense DevX, January 2020
+ * 
+ * Shared configuration and other tidbits for the various demo scripts in this package
+ */
+module.exports = {
+    /**
+     * Your Sisense web server URL
+     * Note it **MUST** include protocol and port and **MUST NOT** end in a `/` character!
+     */
+    baseUrl: "http://0.1.2.3:30845",
+    /**
+     * Your Sisense Bearer token to use (note the ` ` space between `Bearer` and the token itself)
+     */
+    token: "Bearer <insert token here>",
+    /**
+     * A regular expression to extract the actual filename from a path
+     */
+    fileNameRx: /[\w\s_\-\(\):\.]+\.\w+$/
+};

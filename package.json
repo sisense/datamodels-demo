@@ -1,0 +1,40 @@
+{
+  "name": "sisense-datamodels-api-demo",
+  "version": "1.0.0",
+  "description": "Demo scripts using the Sisense Datamodels 2.0 REST API",
+  "keywords": [
+    "sisense",
+    "ecm",
+    "rest",
+    "datamodels",
+    "bi",
+    "analytics"
+  ],
+  "contributors": [
+    "Moti Granovsky"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sisense/datamodels-api-demo"
+  },
+  "main": "demo.js",
+  "scripts": {
+    "lint": "eslint . --ext .js"
+  },
+  "author": "Moti Granovsky",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-nibble": "^5.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-simple-import-sort": "^3.0.0",
+    "eslint-plugin-unicorn": "^7.1.0"
+  }
+}
