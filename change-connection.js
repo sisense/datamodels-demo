@@ -25,7 +25,7 @@ async function main() {
     console.log(`  -> Uploaded file ${FILE_PATH_1} | Uploaded file path: ${uploadResponse.storageInfo.path}`);
 
     console.log(`  -> Uploading file ${FILE_PATH_2}`);
-    const uploadResponse2 = await uploader.upload(FILE_PATH_1);
+    const uploadResponse2 = await uploader.upload(FILE_PATH_2);
     console.log(`  -> Uploaded file ${FILE_PATH_2} | Uploaded file path: ${uploadResponse2.storageInfo.path}`);
 
     console.log("01. Uploading 2 files: done");
