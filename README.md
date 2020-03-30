@@ -78,6 +78,26 @@ node change-connection.js
 1. Updates the table's `id` property according to new CSV file name
 1. Builds the datamodel
 
+### Demo #3: Exporting Datamodel Schemas
+
+**Available on: Sisense Linux L8.0.3.150 or later**
+
+This demo script downloads all available Datamodel schemas, without data, as `.smodel` files, which can be imported to Sisense via UI or API, into a folder called `backup`.
+
+**To Run:**
+
+```
+node export-all.js
+```
+
+**What it does**
+
+1. Creates a folder called `backup` if one doesn't already exist
+1. Gets the `OID` and `title` of all available Datamodel entities
+1. For each Datamodel found:
+    1. Exports the Datamodel
+    1. Stores the response JSON as `.smodel`
+
 ## Extending this demo
 
 This demo uses Node.js with a minimal set of dependencies, listed below.
@@ -118,6 +138,7 @@ Additionally, this project lists `eslint` and several plugins for it as a DevDep
 ├── upload.js                    --> Shared library for uploading CSV/XLSX files to Sisense
 ├── demo.js                      --> Demo #1 - Create datamodel from scratch
 ├── change-connection.js         --> Demo #2 - Change connection of a dataset
+├── export-all.js                --> Demo #3 - Export all Datamodel schemas
 └── assets/                      
     ├── demo.csv                 --> Sample data
     ├── demo2.csv                --> Sample data

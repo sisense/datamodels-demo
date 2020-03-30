@@ -4,6 +4,9 @@
 # Settings file (contains API token)
 shared.js
 
+# Exported models folder
+/backup/
+
 # Dependency directories
 node_modules
 
