@@ -65,7 +65,7 @@ class SisenseUploadClient {
             return response.token;
 
         } catch (e) {
-            console.err('could not validate file');
+            console.error('could not validate file');
             throw e;
         }
     }
@@ -102,7 +102,7 @@ class SisenseUploadClient {
             const raw = await request(options);
             return JSON.parse(raw)[0];
         } catch (e) {
-            console.err('could not upload file');
+            console.error('could not upload file');
             throw e;
         }
     }
