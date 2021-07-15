@@ -92,6 +92,9 @@ class SisenseV2Client {
 
             // Probe the build status until it finishes, or there are no more retries left
             while (!done && retries > 0) {
+                
+                // Wait for 1 interval
+                await _wait(interval);
 
                 // Get build task's status
                 const buildTask = await this.get(`builds/${buildId}`);
@@ -105,9 +108,8 @@ class SisenseV2Client {
                     return status;
                 }
 
-                // If incomplete, wait for 1 interval and try again
+                // If incomplete, try again
                 retries--;
-                await _wait(interval);
             }
         } catch (e) {
             console.error('error in wait for build');
